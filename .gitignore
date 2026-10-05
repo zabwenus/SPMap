@@ -1,0 +1,25 @@
+# Gradle and build output
+.gradle/
+build/
+out/
+
+# IDE metadata
+.idea/
+*.iml
+
+# Local Minecraft runtime data
+run/
+
+# Temporary working copies
+.tmp-xaeroplus/
+
+# Local secrets and environment files
+.env
+.env.*
+*.key
+*.pem
+
+# Logs and crash reports
+*.log
+hs_err_pid*
+crash-reports/

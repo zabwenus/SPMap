@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "map",
+  "version": "${version}",
+  "name": "SPMap",
+  "description": "fork by zabwenus.",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/map/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.zabwenus.mod.map.client.MapDataGenerator"
+    ],
+    "client": [
+      "org.zabwenus.mod.map.client.MapClient"
+    ],
+    "main": [
+      "org.zabwenus.mod.map.Map"
+    ]
+  },
+  "mixins": [
+    "map.mixins.json",
+    {
+      "config": "map.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}",
+    "xaeroworldmap": ">=${worldmap_version}"
+  }
+}
